@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+#grass {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SF2EFT2/grass.png?pub_secret=f38b9224f9");
+  width: 50vw;
+  height: calc(50vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  z-index: 2;
+}
+
+#landandsea {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SFE2TQR/landandwater2.png?pub_secret=d55f21a492");
+  width: 50vw;
+  height: calc(50vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  z-index: 0;
+}
+
+#cloudybackground {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SDMH3BM/cloudysky.jpg?pub_secret=7ea7b9dc41");
+  width: 50vw;
+  height: calc(50vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  z-index: -12;
+  animation: move 2s linear infinite alternate; 
+}
+
+@keyframes move {
+  from { z-index: -12;}
+  to { z-index: -1;}
+}
+
+
+
+#sunnybackground {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SFCHA13/sunnysky.jpg?pub_secret=48d22e7e13");
+  width: 50vw;
+  height: calc(50vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  z-index: -8;
+  animation: move 4s linear infinite alternate; 
+}
+
+@keyframes move {
+  from { z-index: -8;}
+  to { z-index: -1;}
+}
+
+
+#rainybackground {
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SFEE4PR/lightningsky.jpg?pub_secret=742d91f3ce");
+  width: 50vw;
+  height: calc(50vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  z-index: -4;
+  animation: move 6s linear infinite alternate; 
+}
+
+@keyframes move {
+  from { z-index: -4;}
+  to { z-index: -10;}
+}
+		/*Image size: 1650x864, aspect ratio: 1.909;*/
+#yawkyawks {
+
+  background-image: url("https://files.slack.com/files-pri/T086L74T1-F1SFA6V1C/yawkyawkgroup3.png?pub_secret=cd6b18dd00");
+  width: 45vw;
+  height: calc(45vw/1.909);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 3vw;
+  top: 1.8vw;
+  z-index: 1;
+
+  animation: shake .4s;
+  animation-iteration-count: infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  10%, 40% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  
+  60%, 80% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  100%, 10%, {
+    transform: translate3d(-4px, 0, 0);
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+	<div id='yawkyawks'></div> 
+	<div id='cloudybackground'></div> 
+	<div id='landandsea'></div>
+	<div id='grass'></div>
+	<div id='sunnybackground'></div>
+	<div id='rainybackground'></div>
+
+
+</body>
+</html>
